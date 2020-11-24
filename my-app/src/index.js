@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-23 09:06:48
- * @LastEditTime: 2020-11-23 17:07:49
+ * @LastEditTime: 2020-11-24 15:13:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /react_notes/my-app/src/index.js
@@ -9,7 +9,7 @@
 //创建组件，虚拟dom
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./01组件定义方式/app1";
+import {App} from "./01组件定义方式/app";
 
 //2.创建虚拟DOM元素
 /**
