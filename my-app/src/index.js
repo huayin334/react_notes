@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-23 09:06:48
- * @LastEditTime: 2020-11-24 15:13:04
+ * @LastEditTime: 2020-11-24 17:05:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /react_notes/my-app/src/index.js
@@ -9,7 +9,8 @@
 //创建组件，虚拟dom
 import React from "react";
 import ReactDOM from "react-dom";
-import {App} from "./01组件定义方式/app";
+import App from "./demo/01评论列表组件";
+import {BrowserRouter, HashRouter, Route } from "react-router-dom";
 
 //2.创建虚拟DOM元素
 /**
@@ -24,7 +25,7 @@ import {App} from "./01组件定义方式/app";
  * 必须有唯一的根元素
  */
 const myh1 = React.createElement("h1", null, "这是一个大大的h1");
-const myDiv = <div>11011</div>;
+const myDiv = <div> 11011 </div>;
 
 const list = ["小五郎", "大五郎", "毛利"];
 //forEach遍历不返回
@@ -36,15 +37,10 @@ const list = ["小五郎", "大五郎", "毛利"];
  * 参数2：指定页面上一个容器
  */
 ReactDOM.render(
-  <div>
-    <App name='我是传进来的数据'/> {myh1} {myDiv}
+  <BrowserRouter>
     <div>
-      {list.map((item) => (
-        <div key={item}>
-          <h5>{item}</h5>
-        </div>
-      ))}
+      <App name="我是传进来的数据" />
     </div>
-  </div>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
