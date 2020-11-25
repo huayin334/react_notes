@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-23 09:06:48
- * @LastEditTime: 2020-11-24 17:05:15
+ * @LastEditTime: 2020-11-25 19:23:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /react_notes/my-app/src/index.js
@@ -9,8 +9,8 @@
 //创建组件，虚拟dom
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./demo/01评论列表组件";
-import {BrowserRouter, HashRouter, Route } from "react-router-dom";
+import App from "./01组件定义方式/app1";
+import {BrowserRouter} from "react-router-dom";
 
 //2.创建虚拟DOM元素
 /**
@@ -24,10 +24,10 @@ import {BrowserRouter, HashRouter, Route } from "react-router-dom";
  * label标签中的for用htmlFor代替
  * 必须有唯一的根元素
  */
-const myh1 = React.createElement("h1", null, "这是一个大大的h1");
-const myDiv = <div> 11011 </div>;
+// const myh1 = React.createElement("h1", null, "这是一个大大的h1");
+// const myDiv = <div> 11011 </div>;
 
-const list = ["小五郎", "大五郎", "毛利"];
+// const list = ["小五郎", "大五郎", "毛利"];
 //forEach遍历不返回
 //map遍历，并且返回新数组
 
